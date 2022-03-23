@@ -255,7 +255,7 @@ Orbiter.prototype.setup = function () {
 
   this.element.addEventListener('mousedown', onMouseDown)
   this.element.addEventListener('touchstart', onTouchStart)
-  this.element.addEventListener('wheel', onWheel)
+  this.element.addEventListener('wheel', onWheel,{ passive: false })
   window.addEventListener('mousemove', onMouseMove)
   window.addEventListener('touchmove', onMouseMove, { passive: false })
   window.addEventListener('mouseup', onMouseUp)
